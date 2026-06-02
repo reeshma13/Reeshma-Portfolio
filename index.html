@@ -916,6 +916,24 @@
       animation-delay: 0.64s;
     }
 
+    .cert-link {
+      margin-top: 8px;
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--teal);
+      text-decoration: none;
+    }
+
+    .cert-link:hover {
+      text-decoration: underline;
+    }
+
+    .cert-link.pending {
+      color: #9ca3af;
+      cursor: default;
+    }
+
     /* ---- RESPONSIVE ---- */
     @media(max-width:768px) {
       nav {
@@ -982,7 +1000,8 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#" class="nav-resume">Resume ↓</a></li>
+      <li><a href="./resume.pdf" download="SaiLakshmiReeshma_Resume.pdf" target="_blank" class="nav-resume">Resume ↓</a>
+      </li>
     </ul>
   </nav>
 
@@ -1002,7 +1021,8 @@
       </p>
       <div class="hero-cta fade-up d4">
         <a href="#projects" class="btn btn-primary">View Projects →</a>
-        <a href="#" class="btn btn-ghost">Download Resume</a>
+        <a href="./resume.pdf" download="SaiLakshmiReeshma_Resume.pdf" target="_blank" class="btn btn-ghost">Download
+          Resume</a>
         <a href="https://github.com/reeshma13" target="_blank" class="btn btn-ghost">GitHub</a>
         <a href="https://linkedin.com/in/reeshma13" target="_blank" class="btn btn-ghost">LinkedIn</a>
         <a href="tel:+916304966075" class="btn btn-ghost">Phone</a>
@@ -1317,7 +1337,8 @@
           </div>
           <ul class="exp-bullets">
             <li>Managed Jenkins CI/CD pipelines for <strong>20 services</strong>; supported GCP Rancher deployments for
-              <strong>15 services</strong> — token updates, pipeline failures, environment fixes.</li>
+              <strong>15 services</strong> — token updates, pipeline failures, environment fixes.
+            </li>
             <li>Contributed to migration of <strong>24 services</strong> from on-premise to GCP-hosted Rancher;
               introduced Kubernetes readiness and liveness probes to improve uptime.</li>
             <li>Resolved <strong>800+ CodeQL security findings</strong> across services, addressing log injection
@@ -1334,6 +1355,23 @@
         <div class="award-chip">
           <span class="award-star">★</span>
           <span class="award-text"><strong>Manager Recognition</strong> — 7 instances across multiple quarters</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label">Education</div>
+      <h2 class="section-title">Graduation</em></h2>
+      <p class="section-sub"></p>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-dot gold"></div>
+          <div>
+            <div class="cert-name">B.Tech in Computer Science & Engineering</div>
+            <div class="cert-issuer">QIS College of Engineering & Technology · 2023 · CGPA 8.36 / 10</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1436,15 +1474,18 @@
   <!-- CERTS -->
   <section id="certifications">
     <div class="container">
-      <div class="section-label">Certifications & Education</div>
-      <h2 class="section-title">Learning & <em>credentials</em></h2>
+      <div class="section-label">Certifications</div>
+      <h2 class="section-title">Learning</em></h2>
       <p class="section-sub"></p>
       <div class="cert-grid">
         <div class="cert-card">
           <div class="cert-dot teal"></div>
           <div>
             <div class="cert-name">Business Analytics with Gen AI & Agentic AI</div>
-            <div class="cert-issuer">BITSoM × Masai · 2025–26 · CGPA 7.97 / 10</div>
+            <div class="cert-issuer">BITSoM × Masai · 2026 · CGPA 7.97 / 10</div>
+
+            <a href="https://drive.google.com/file/d/1TQfLp33BVHxdwEjdb4-fNsZqLX0gGTsC/view?usp=sharing" target="_blank"
+              class="cert-link">View Certificate →</a>
           </div>
         </div>
         <div class="cert-card">
@@ -1452,13 +1493,6 @@
           <div>
             <div class="cert-name">AI Academy Certification — Basic, Intermediate & Advanced</div>
             <div class="cert-issuer">Lumen Technologies (Internal)</div>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-dot gold"></div>
-          <div>
-            <div class="cert-name">B.Tech in Computer Science & Engineering</div>
-            <div class="cert-issuer">QIS College of Engineering & Technology · 2019–2023 · CGPA 8.36 / 10</div>
           </div>
         </div>
       </div>
